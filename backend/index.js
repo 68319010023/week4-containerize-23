@@ -9,10 +9,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/health', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     await pool.query('SELECT 1');
-    res.json({ status: 'ok', service: 'StockPro API', timestamp: new Date() });
+    res.json({ status: 'บารมี', service: 'StockPro API', timestamp: new Date() });
   } catch (err) {
     res.status(503).json({ status: 'error', message: err.message });
   }
