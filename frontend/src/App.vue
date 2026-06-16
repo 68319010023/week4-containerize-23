@@ -142,7 +142,7 @@ onMounted(fetchProducts)
         <span class="logo-icon">📦</span>
         <div>
           <div class="logo-name">StockPro</div>
-          <div class="logo-sub">ระบบจัดการสินค้าคงคลัง</div>
+          <div class="logo-sub">ระบบโหด</div>
         </div>
       </div>
       <button class="btn-add" @click="openAdd">+ เพิ่มสินค้า</button>
@@ -308,7 +308,7 @@ onMounted(fetchProducts)
     <div class="overlay" v-if="confirmDelete" @click.self="confirmDelete = null">
       <div class="modal confirm">
         <div class="confirm-icon">🗑️</div>
-        <div class="confirm-title">ยืนยันการลบสินค้า</div>
+        <div class="confirm-title">ลบสินค้า</div>
         <div class="confirm-desc">
           คุณต้องการลบ <strong>{{ confirmDelete?.name }}</strong> ออกจากระบบหรือไม่?<br>
           <span style="color:#dc2626">การกระทำนี้ไม่สามารถย้อนกลับได้</span>
@@ -370,7 +370,7 @@ onMounted(fetchProducts)
 .stat-label { font-size: .8rem; color: #64748b; margin-top: .2rem; }
 
 .alert-low {
-  background: #fef2f2; border: 1px solid #fca5a5;
+  background: #fc5e1b; border: 1px solid #fca5a5;
   border-radius: 10px; padding: .85rem 1.2rem;
   font-size: .92rem; margin-bottom: 1.5rem; color: #991b1b;
 }
