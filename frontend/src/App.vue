@@ -320,6 +320,8 @@ onMounted(fetchProducts)
       </div>
     </div>
 
+    
+<footer class="app-footer">นาย บารมี ปะวะลัง  ปวส2/3 </footer>
   </div>
 </template>
 
@@ -393,6 +395,19 @@ onMounted(fetchProducts)
 .state-icon { font-size: 3rem; margin-bottom: .75rem; }
 .state-title { font-size: 1.1rem; font-weight: 700; color: #1e293b; margin-bottom: .3rem; }
 .state-desc { font-size: .9rem; }
+
+.app-footer {
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  justify-content: center;
+  text-align: center; color: #64748b;
+  height: 62px;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 6px rgba(0,0,0,.07);
+}
+
 
 .product-grid {
   display: grid;
